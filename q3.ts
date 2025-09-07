@@ -13,13 +13,13 @@ console.log(doubleNumbers([1, 2, 3, 4]));
 
 
 
-// Question 4: Combining Tuples, Maps, and Lists
+Question 4: Combining Tuples, Maps, and Lists
 
-// Q:
-// You are given a list of product tuples:
-// type Product = [string, number]; // [productName, price]
+Q:
+You are given a list of product tuples:
+type Product = [string, number]; // [productName, price]
 
-// Create a function groupByPriceRange that groups products into a Map<string, Product[]> where the key is "cheap" (price < 50) or "expensive" (price >= 50
+Create a function groupByPriceRange that groups products into a Map<string, Product[]> where the key is "cheap" (price < 50) or "expensive" (price >= 50
 
 
 type Product = [string, number]; // [productName, price]
@@ -50,8 +50,9 @@ const products: Product[] = [
 ];
 
 console.log(groupByPriceRange(products));
-// Output: Map(2) { 'cheap' => [ [ 'Pen', 10 ], [ 'Notebook', 40 ] ],
-//                  'expensive' => [ [ 'Headphones', 100 ], [ 'Keyboard', 75 ] ] }
+Output: Map(2) 
+{ 'cheap' => [ [ 'Pen', 10 ], [ 'Notebook', 40 ] ],
+                 'expensive' => [ [ 'Headphones', 100 ], [ 'Keyboard', 75 ] ] }
 
 
 // that ! at the end of result.get("cheap")! is a TypeScript thing called the non-null assertion operator.
